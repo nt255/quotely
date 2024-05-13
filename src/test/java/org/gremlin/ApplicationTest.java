@@ -27,12 +27,14 @@ public class ApplicationTest {
     void testGetQuoteResponseEnglish() {
         QuoteResponse quoteResponse = application.getQuoteResponse("English");
         assertFalse(quoteResponse.getQuoteText().isEmpty());
+        assertFalse(quoteResponse.getQuoteAuthor().isEmpty());
     }
 
     @Test
     void testGetQuoteResponseRussian() {
         QuoteResponse quoteResponse = application.getQuoteResponse("Russian");
         assertFalse(quoteResponse.getQuoteText().isEmpty());
+        assertFalse(quoteResponse.getQuoteAuthor().isEmpty());
     }
 
     @Test

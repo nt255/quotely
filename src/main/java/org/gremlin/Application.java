@@ -69,6 +69,7 @@ public class Application {
 
         QuoteResponse quoteResponse = getQuoteResponse(lang);
         System.out.println(quoteResponse.getQuoteText());
+        System.out.println(quoteResponse.getQuoteAuthor());
     }
 
 }
